@@ -6,11 +6,24 @@ public class calculator {
 		// TODO Auto-generated method stub
 		
 		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("would you like to add or subtract your numbers?");
+		String e = scanner.nextLine();
+		
 		System.out.println("enter one number.");
 		int num = scanner.nextInt();
 		System.out.println("enter another number.");
 		int num2 = scanner.nextInt();
-		System.out.println(num + num2);
+		
+		
+		if (e.equalsIgnoreCase("add")) {
+			System.out.println(num + num2);
+		}
+		else if (e.equalsIgnoreCase("subtract")) {
+			System.out.println(num - num2);
+			
+		}
+		
 
 	}
 
