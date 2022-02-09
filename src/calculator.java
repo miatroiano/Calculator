@@ -30,7 +30,12 @@ public class calculator {
 				
 			}
 			else if (type.equalsIgnoreCase("divide")) {
-				System.out.println(num / num2);
+				if (num2 == 0) {
+					System.out.println("“Error: Divide by Zero");
+				}
+				else {
+					System.out.println(num / num2);
+				}
 				
 			}
 		}
@@ -53,7 +58,12 @@ public class calculator {
 				
 			}
 			else if (type.equalsIgnoreCase("divide")) {
-				System.out.println(num / num2);
+				if (num2 == 0) {
+					System.out.println("“Error: Divide by Zero");
+				}
+				else {
+					System.out.println(num / num2);
+				}
 				
 			}
 		}
@@ -76,12 +86,16 @@ public class calculator {
 				
 			}
 			else if (type.equalsIgnoreCase("divide")) {
-				System.out.println(num / num2);
-				
+				if (num2 == 0) {
+					System.out.println("“Error: Divide by Zero");
+				}
+				else {
+					System.out.println(num / num2);
+				}
 			}
 				
-			}
-
 		}
+
+	}
 
 }
